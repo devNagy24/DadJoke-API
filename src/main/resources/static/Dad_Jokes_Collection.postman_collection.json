@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "c4c6bc4d-bbc8-48d2-af89-47fc4138af96",
+    "name": "Dad Jokes Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17643098"
+  },
+  "item": [
+    {
+      "name": "Get All Jokes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:63344/jokes",
+          "host": [
+            "localhost"
+          ],
+          "port": "63344",
+          "path": [
+            "jokes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add New Joke",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"jokeText\": \"Why don't skeletons fight each other? They don't have the guts.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:63344/jokes",
+          "host": [
+            "localhost"
+          ],
+          "port": "63344",
+          "path": [
+            "jokes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Joke",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"jokeText\": \"Why don't skeletons ARGUE with each other? They don't have the guts.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:63344/jokes/11",
+          "host": [
+            "localhost"
+          ],
+          "port": "63344",
+          "path": [
+            "jokes",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Joke",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:63344/jokes/11",
+          "host": [
+            "localhost"
+          ],
+          "port": "63344",
+          "path": [
+            "jokes",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
